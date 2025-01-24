@@ -42,12 +42,16 @@ if input('Encrypt or Decrypt: ').lower() == 'e':
     key = input('Enter the key: ').upper()
     encrypt = True
     print(vigenere(x, key, encrypt))
+    
+    
 else:
     x = input('Enter the text: ').upper()
     encrypt = False
     if input('Do you have the key (y/n)? ') == "y":
         key = input('Enter the key: ').upper()
         print(vigenere(x, key, encrypt))
+        
+        
     else:
         abc = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
         question = input('Enter a part of the key or length (answer by 1 or 2 or nothing): ')
